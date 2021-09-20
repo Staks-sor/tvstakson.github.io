@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="C:/Users/stass/IdeaProjects/untitled/mysait/media/123.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="preloader">
+    <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+    </div>
+</div>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 50000);
+  }
+</script>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>IT.Staks</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Обо мне" onclick="slowScroll('#main')">Обо мне</a>
+        <a href="#" onclick="slowScroll('#overview')" title="Мои проекты">Мои проекты</a>
+        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+        <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+</header>
+
+<div id="top">
+    <h1></h1>
+    <h3></h3>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2>Инфорамция о себе</h2>
+
+    </div>
+    <div class="text">
+        <p>О себе:<br>
+    Целеустремленный,<br>
+    Ответственный,<br>
+    Исполнительный.<br>
+<br>
+Хобби:<br>
+    Написание на Python учеба с целью смены профессии.<br>
+    Катание на велосипеде (MTB, Country)<br>
+    Компьютерные игры (RPG, ActionRPG, Shooter, Economic strategy).<br>
+<br>
+Нынешняя работа не приносит мне той радости и кайфа как написание кода, по этому хочу изменить свою жинь.<br>
+<br>
+С чем работал, что изучал(изучаю):<br>
+    1) Git<br>
+    2) HTML<br>
+    3) CSS<br>
+    4) JavaScripts<br>
+    5) Fake_useragent<br>
+    6) Asyncio<br>
+    7) Django<br>
+    8) Selenium<br>
+    9) Logging<br>
+  10) Colorama<br>
+  11) Multiprocessing<br>
+<br>
+            <a>https://github.com/tvstaks/tvstaks.git</a><br>
+В ближайшее время все залью на GitHub<br>
+
+<br>
+Пользуясь данными фреймворком и библиотеками работал над собственными проектами которые мне были интересны в процессе изучения.<br>
+<br>
+Собственные проекты:<br>
+    1) Парсер накрутчик selenium (простой эффективный накрутчик который выполнял свою главную задачу без мишуры);<br>
+    2) телеграмм бот разговорный (не стал активно развивать данный проект так как занимался первым проектом, но это интересный опыт);<br>
+    3) голосовой ассистент (было просто интересно, сейчас планирую вернуться к данному проекту так как хочу сделать голосовую запись с последующей записью инструмента в именную карту для себя на нынешней работе).<br>
+    4) попытка сделать сайт на django (на данный момент работаю над этим).<br>
+<br>
+На данный момент:<br>
+   1) Прохожу обучение.<br>
+   2) Создаю собственный сайт.<br>
+   3) Голосовой помощник с записью данных в бд(нужен для нынешней работы для введения карт выдачи).<br></p>
+    </div>
+</div>
+
+<div id="overview">
+    <h2>Мои проекты</h2>
+
+
+    <div class="img">
+        <img src="" alt="">
+        <span>Парсер</span>
+    </div>
+    <div class="img">
+        <img src="" alt="">
+        <span>Бот</span>
+    </div>
+    <div class="img">
+        <img src="" alt="">
+        <span>Бот</span>
+    </div>
+    <div class="img">
+        <img src="" alt="">
+        <span>Бот</span>
+    </div>
+</div>
+
+<div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+        <label for="name">Имя <span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта <span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение <span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+</div>
+
+<div id="faq">
+    <div>
+        <span class="title"></span><br>
+        <span class="heading"></span>
+        <p></p>
+        <span class="heading"></span>
+        <p></p>
+        <span class="heading"></span>
+        <p></p>
+    </div>
+    <div>
+        <span class="title"></span><br>
+        <span class="heading"></span>
+        <p></p>
+        <span class="heading"></span>
+        <p></p>
+        <span class="heading"></span>
+        <p></p>
+    </div>
+    <div>
+        <span class="title"></span><br>
+        <span class="heading"></span>
+        <p></p>
+        <span class="heading"></span>
+        <p></p>
+        <span class="heading"></span>
+        <p></p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
