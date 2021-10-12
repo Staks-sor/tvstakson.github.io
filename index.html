@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <link rel="shortcut icon" href="C:/Users/stass/IdeaProjects/untitled/mysait/media/123.png" type="image/png">
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мой сайт</title>
@@ -21,7 +21,7 @@
     window.setTimeout(function () {
       document.body.classList.add('loaded');
       document.body.classList.remove('loaded_hiding');
-    }, 50000);
+    }, 500);
   }
 </script>
 <header>
@@ -32,18 +32,20 @@
         <a href="#" title="Обо мне" onclick="slowScroll('#main')">Обо мне</a>
         <a href="#" onclick="slowScroll('#overview')" title="Мои проекты">Мои проекты</a>
         <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
-        <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+
     </div>
 </header>
 
 <div id="top">
-    <h1></h1>
-    <h3></h3>
+    <h1>Добро пожаловать!</h1>
+    <p>Мой первый личный сайт с инфорамцией обо мне и моих работах.</p>
+    <p>C кодом можно ознакомится на странице в GitHub.</p>
+    <a id="target_link" target="_blank" href="https://github.com/tvstaks">Посмотреть профиль на Github</a>
 </div>
 
 <div id="main">
     <div class="intro">
-        <h2>Инфорамция о себе</h2>
+        <h2>Информация обо мне:</h2>
 
     </div>
     <div class="text">
@@ -72,8 +74,7 @@
   10) Colorama<br>
   11) Multiprocessing<br>
 <br>
-            <a>https://github.com/tvstaks/tvstaks.git</a><br>
-В ближайшее время все залью на GitHub<br>
+
 
 <br>
 Пользуясь данными фреймворком и библиотеками работал над собственными проектами которые мне были интересны в процессе изучения.<br>
@@ -96,7 +97,6 @@
 
 
     <div class="img">
-        <img src="" alt="">
         <span>Парсер</span>
     </div>
     <div class="img">
@@ -114,49 +114,16 @@
 </div>
 
 <div id="contacts">
-    <center><h5>Обратная связь</h5></center>
-    <form id="form_input">
-        <label for="name">Имя <span>*</span></label><br>
-        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
-        <label for="email">Ваша почта <span>*</span></label><br>
-        <input type="email" placeholder="Введите email" name="email" id="email"><br>
-        <label for="message">Сообщение <span>*</span></label><br>
-        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
-        <div id="mess_send" class="btn">Отправить</div>
-    </form>
+    <h5>Мои контакты</h5>
+    <p>Мой телефон email</p>
+
+
 </div>
 
-<div id="faq">
-    <div>
-        <span class="title"></span><br>
-        <span class="heading"></span>
-        <p></p>
-        <span class="heading"></span>
-        <p></p>
-        <span class="heading"></span>
-        <p></p>
-    </div>
-    <div>
-        <span class="title"></span><br>
-        <span class="heading"></span>
-        <p></p>
-        <span class="heading"></span>
-        <p></p>
-        <span class="heading"></span>
-        <p></p>
-    </div>
-    <div>
-        <span class="title"></span><br>
-        <span class="heading"></span>
-        <p></p>
-        <span class="heading"></span>
-        <p></p>
-        <span class="heading"></span>
-        <p></p>
-    </div>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/jquery.onepage-scroll.min.js"></script>
 <script>
     function slowScroll(id) {
       $('html, body').animate({
