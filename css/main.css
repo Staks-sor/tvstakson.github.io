@@ -112,6 +112,11 @@ header.fixed #logo {
 
 }
 
+#danger {
+  text-align: center;
+  color: #ff0000;
+}
+
 @media (min-width: 1001px) {
   #top {
 
@@ -145,9 +150,6 @@ header.fixed #logo {
   padding-top: 20%;
 }
 
-#top h3 {
-  color: #ccc;
-}
 
 /* Блок с возможностями */
 
